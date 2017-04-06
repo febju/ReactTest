@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+* {
+	border-radius: 0 !important;
+}
+
+.AppContainer {
+	margin: 0px auto;
+	width: 976px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.Banner{
+	margin: 0 auto;
+	width: 912px;
+	height: 96px;
+	background: #ADB5BD;
+	padding: 32px;
+}
+
+.banner-content {
+	color: white;
+	line-height: 32px;
+	font-size: 30px;
+}
+
+img {
+	width: 32px;
+	height: 32px;
+	margin-right: 16px;
+	margin-top: -14px;
+}
+
+.Participants {
+	margin: 0 auto;
+	width: 912px;
+	padding: 50px 32px 150px 32px;
+	background-color: #F1F1F1;
+}
+
+.table-topic {
+	margin-bottom: 50px;
+	color: #505050;
+}
+
+table {
+	background: white;
+	margin-bottom: 10px !important;
+}
+
+td {
+	color: #505050;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	height: 74px;
+}
+
+.row-normal {
+	padding: 24px !important;
+}
+
+.row-edit {
+	padding: 16px !important;
+}
+
+.form-control {
+	height: 40px !important;
+	font-size: 16px !important;
+	line-height: 24px !important;
+	font-weight: 400 !important;
+}
+
+.input-add {
+	background: #FAFAFA;
+}
+
+.input-edit {
+	background: #F9F9F9;
+}
+
+.row-name {
+	width: 22%;
+}
+
+.row-email {
+	width: 36%;
+}
+
+.row-phone {
+	width: 22%;
+}
+
+.row-buttons {
+	width: 20%;
+}
+
+th {
+	color: #757575;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	padding: 16px 24px !important;
+}
+
+th .material-icons {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+td .material-icons{
+	color: #909090;
+	height:24px;
+	width:24px;
+	margin-left: 40px;
+}
+
+.input-buttons {
+	padding-right: 24px !important;
+	padding-top: 24px !important;
+}
+
+.btn {
+	height: 40px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.btn-add {
+	color: #505050;
+	background-color: #EDEDED;
+}
+
+.btn-cancel {
+	background-color: #EDEDED;
+	color: #07f;
+	margin-right: 10px;
+}
+
+.btn-save {
+	background: #07f;
+	color: #ffffff;
+}
+
+
+/*
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+*/
