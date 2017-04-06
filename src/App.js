@@ -49,7 +49,6 @@ class App extends Component {
 			else this.setState( {peoplelist: (this.state.peoplelist.concat([new_person])).sort(phone_desc)});
 		}
 		if (this.state.sort_criterion === '') this.setState( {peoplelist: this.state.peoplelist.concat([new_person])} );						//Is needed for the default setup, when the table isn't sorted
-		console.log(this.state.peoplelist);
 	}
 	
 	//If a person is deleted, the index of their information in the array is searched based on the id. After the index is found, the array is spliced based on the id. At last the array is updated to its current state. 
@@ -347,12 +346,17 @@ class Person extends Component {
 	//When remove button is pressed, delete the row
 	handleRemovePerson () {
 		this.props.onPersonDelete( this.props.person );
+		return false;
 	}
 	
 	//When edit button is pressed, set the row to be editable
 	handleEditPerson () {
-		this.setState({editable: true});	//Set the determined row to be editable
-		in_edit ++;							//Add one to the counter keeping track of edited files
+		this.setState({editable: true});			//Set the determined row to be editable
+		this.state.name = this.props.person.name;	//Set values for the edit fields
+		this.state.email = this.props.person.email;
+		this.state.phone = this.props.person.phone;
+		in_edit ++;									//Add one to the counter keeping track of edited files
+		return false;
 	}
 	
 	//Keep track of the changed values in the input fields of the edited rows
