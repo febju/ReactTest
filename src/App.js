@@ -115,14 +115,11 @@ class App extends Component {
 	
 	//Render the app
 	//Contains the Banner with logo and Participant list (the table)
-	/*
-	 *	Change the source path for the image.
-	 */
 	render() {
 		return (
 			<div className="AppContainer">
 				<div className="Banner">
-					<div><img src='http://febju.dy.fi/test/images/logo.png'/><span className="align-middle banner-content">Nord Software</span></div>
+					<div><img src={require('./logo.png')}/><span className="align-middle banner-content">Nord Software</span></div>
 				</div>
 				<div className="Participants">
 					<h2 className="table-topic">List of participants</h2>
