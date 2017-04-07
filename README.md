@@ -20,10 +20,10 @@
 <b>How to host your own version of this on Linux:</b><br />
 <br />
 1. <i>git clone https://github.com/febju/ReactTest.git</i>
-2. Setup /build-folder as a root folder in Apache/Nginx. Recommended to use alias as well.
-3. Change homepage setting from package.json to fit your own hosting setup (yourownsite.com/installationfolder).
+2. Setup /build-folder as a root folder in Apache/Nginx for the app. This can be achieved by modifying the configuration files. On Apache you have to add <i>Alias "/yourapp" "/installationpath/build"</i>.
+3. Change homepage setting from package.json to fit your own hosting setup (yourownsite.com/yourapp).
 4. <i>npm run build</i>
-5. Your own version of this app should now be running.
+5. Your own version of this app should now be running and accessible on yourownsite.com/app.
 <br />
 <br />
 <b>The app is hosted at:</b> http://projektit.febju.dy.fi/test.
